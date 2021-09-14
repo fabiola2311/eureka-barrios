@@ -1,0 +1,943 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+/*clases de formato estándar*/
+main {
+  padding-top: 8%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.shadow {
+  position: relative;
+  z-index: 200;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono {
+  font-size: 22px;
+}
+
+.fontRojoOscuro {
+  color: #b20837;
+}
+
+.bgRojoOscuro {
+  background-color: #b20837;
+}
+
+.fontRojoClaro {
+  color: #C6083E;
+}
+
+.bgRojoClaro {
+  background-color: #C6083E;
+}
+
+.fontAzulOscuro {
+  color: #21244F;
+}
+
+.bgAzulOscuro {
+  background-color: #21244F;
+}
+
+.fontAzulClaro {
+  color: #333566;
+}
+
+.bgAzulClaro {
+  background-color: #333566;
+}
+
+.fontRosado {
+  color: #f595b0;
+}
+
+.bgRosado {
+  background-color: #f595b0;
+}
+
+.fontCeleste {
+  color: #8789ce;
+}
+
+.bgCeleste {
+  background-color: #8789ce;
+}
+
+.fontBlanco {
+  color: white;
+}
+
+.bgBlanco {
+  background-color: white;
+}
+
+.fontGris {
+  color: #e4e4e4;
+}
+
+.bgGris {
+  background-color: #e4e4e4;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+.h3 {
+  font-size: 28px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 20px;
+}
+
+.h6 {
+  font-size: 18px;
+}
+
+.p {
+  font-size: 16px;
+}
+
+.i {
+  font-size: 100px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.extraBold {
+  font-weight: 700;
+}
+
+.pd1 {
+  padding: 1%;
+}
+
+.mg1 {
+  margin: 1%;
+}
+
+.pd2 {
+  padding: 2%;
+}
+
+.mg2 {
+  margin: 2%;
+}
+
+.pd3 {
+  padding: 3%;
+}
+
+.mg3 {
+  margin: 3%;
+}
+
+.pd4 {
+  padding: 4%;
+}
+
+.mg4 {
+  margin: 4%;
+}
+
+.pd5 {
+  padding: 5%;
+}
+
+.mg5 {
+  margin: 5%;
+}
+
+.pd6 {
+  padding: 6%;
+}
+
+.mg6 {
+  margin: 6%;
+}
+
+.pd7 {
+  padding: 7%;
+}
+
+.mg7 {
+  margin: 7%;
+}
+
+.pd8 {
+  padding: 8%;
+}
+
+.mg8 {
+  margin: 8%;
+}
+
+.pd9 {
+  padding: 9%;
+}
+
+.mg9 {
+  margin: 9%;
+}
+
+.pd10 {
+  padding: 10%;
+}
+
+.mg10 {
+  margin: 10%;
+}
+
+.pd11 {
+  padding: 11%;
+}
+
+.mg11 {
+  margin: 11%;
+}
+
+.pd12 {
+  padding: 12%;
+}
+
+.mg12 {
+  margin: 12%;
+}
+
+.pd13 {
+  padding: 13%;
+}
+
+.mg13 {
+  margin: 13%;
+}
+
+.pd14 {
+  padding: 14%;
+}
+
+.mg14 {
+  margin: 14%;
+}
+
+.pd15 {
+  padding: 15%;
+}
+
+.mg15 {
+  margin: 15%;
+}
+
+.pd16 {
+  padding: 16%;
+}
+
+.mg16 {
+  margin: 16%;
+}
+
+.pd17 {
+  padding: 17%;
+}
+
+.mg17 {
+  margin: 17%;
+}
+
+.pd18 {
+  padding: 18%;
+}
+
+.mg18 {
+  margin: 18%;
+}
+
+.pd19 {
+  padding: 19%;
+}
+
+.mg19 {
+  margin: 19%;
+}
+
+.pd20 {
+  padding: 20%;
+}
+
+.mg20 {
+  margin: 20%;
+}
+
+.boton {
+  background-color: #C6083E;
+  border: solid 0px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.boton:hover {
+  background-color: #b20837;
+}
+
+/*Estilos header*/
+nav img {
+  width: 50%;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 10%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*Estilos seccion 1 banner pricipal - index*/
+.bannerPrincipal {
+  background-color: #21244F;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+
+.bannerPrincipal div {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerPrincipal div .bannerPrincipal__lottie {
+  margin-bottom: -180px;
+  margin-top: -120px;
+}
+
+.bannerPrincipal__lottie {
+  height: 50em;
+  width: 50em;
+}
+
+/*Estilos seccion 2 slogan - index*/
+.slogan {
+  text-align: center;
+}
+
+/*Estilos seccion 3 que hacemos - index*/
+.queHacemos__padreBloques {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.queHacemos__padreBloques .queHacemos__vacio, .queHacemos__padreBloques .queHacemos__titulo, .queHacemos__padreBloques .queHacemos__bloque {
+  width: 20%;
+}
+
+.queHacemos__padreBloques .queHacemos__vacio h3, .queHacemos__padreBloques .queHacemos__titulo h3, .queHacemos__padreBloques .queHacemos__bloque h3 {
+  margin-bottom: 0%;
+  margin-top: 4%;
+  padding-left: 10%;
+}
+
+.queHacemos__padreBloques .queHacemos__titulo {
+  padding-right: 0%;
+}
+
+.queHacemos__padreBloques h4 {
+  text-align: center;
+}
+
+.queHacemos__padreBloques .queHacemos__icono {
+  display: flex;
+  justify-content: center;
+  /*Estilos Iconos*/
+}
+
+.queHacemos__padreBloques .queHacemos__icono span {
+  font-size: 5em;
+}
+
+/*Estilos seccion 4 call to action - index*/
+.callToAction {
+  text-align: center;
+}
+
+.callToAction .callToAction__boton {
+  margin-top: 2%;
+}
+
+/*Estilos seccion 5 como lo hacemos - index*/
+.comoLoHacemos {
+  display: flex;
+}
+
+.comoLoHacemos .comoLoHacemos__titulo {
+  padding-top: 2%;
+}
+
+.comoLoHacemos .comoLoHacemos__titulo--subrayado {
+  border-bottom: 5px solid #b20837;
+  width: 45%;
+}
+
+.comoLoHacemos .comoLoHacemos__parrafo p {
+  padding-top: 2%;
+}
+
+.comoLoHacemos > div {
+  width: 50%;
+}
+
+.comoLoHacemos .comoLoHacemos__lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comoLoHacemos .comoLoHacemos__lottie lottie-player {
+  width: 80%;
+}
+
+/*Estilos seccion 6 como lo hacemos columnas - index*/
+.bloquesComoLoHacemos > div {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.bloquesComoLoHacemos .bloquesComoLoHacemos__bloque {
+  width: 25%;
+}
+
+.bloquesComoLoHacemos .bloquesComoLoHacemos__bloque div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloquesComoLoHacemos .bloquesComoLoHacemos__bloque div .bloquesComoLoHacemos__icono {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 7em;
+  height: 7em;
+  /*Estilos Iconos*/
+}
+
+.bloquesComoLoHacemos .bloquesComoLoHacemos__bloque div .bloquesComoLoHacemos__icono span {
+  font-size: 5em;
+}
+
+/*Estilos seccion 7 porque elegirnos - index*/
+.porqueElegirnos {
+  display: flex;
+}
+
+.porqueElegirnos > div {
+  width: 50%;
+}
+
+.porqueElegirnos .porqueElegiernos__titulo--subrayado {
+  border-bottom: 5px solid #b20837;
+  width: 45%;
+}
+
+.porqueElegiernos__lista {
+  padding-top: 2%;
+}
+
+.porqueElegiernos__lista li {
+  padding-top: 2%;
+}
+
+.porqueElegiernos__lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.porqueElegiernos__lottie lottie-player {
+  width: 80%;
+}
+
+/*Estilos Seccion 8 Tabla de servicios - index*/
+.tabla {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  padding-bottom: 5%;
+}
+
+.tabla h2 {
+  padding-bottom: 2%;
+}
+
+.tabla table, .tabla td, .tabla tr, .tabla th {
+  border: 3px solid #C6083E;
+  padding: 1%;
+  text-align: center;
+}
+
+/*Estilos footer - index*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer__redesSociales {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+footer .footer__redesSociales li {
+  margin-left: 30px;
+}
+
+footer .footer__redesSociales a {
+  text-decoration: none;
+}
+
+footer .footer__redesSociales a:hover {
+  color: white;
+}
+
+footer .footer__form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+footer .footer__email {
+  border: 0px solid white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+footer .footer__boton {
+  border: 0px solid #b20837;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 0.8%;
+  width: 20%;
+}
+
+/*Estilos seccion 1 titulo - trabajos*/
+.trabajos {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33333%);
+}
+
+.trabajos .trabajos__bloque h4 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+/*Estilos seccion 3 call to action - trabajos*/
+.botonTrabajos {
+  width: 20%;
+}
+
+.comoLoHacemos__titulo {
+  padding-top: 2%;
+}
+
+.comoLoHacemos__titulo--subrayado {
+  border-bottom: 5px solid #b20837;
+  width: 45%;
+}
+
+.comoLoHacemos__parrafo p {
+  padding-top: 2%;
+}
+
+.comoLoHacemos > div {
+  width: 50%;
+}
+
+.comoLoHacemos__lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comoLoHacemos__lottie lottie-player {
+  width: 80%;
+}
+
+/*Estilos seccion 2 servicios - servicios*/
+.servicios__bloque {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.servicios__bloque h3 {
+  margin-bottom: 3%;
+}
+
+.servicios__bloque .material-icons {
+  font-size: 100px;
+}
+
+.servicios__icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos seccion 2 somos eureka - nosotros*/
+.somosEureka__titulo--sinEspacio {
+  padding-bottom: 0%;
+}
+
+.somosEureka {
+  display: flex;
+}
+
+.somosEureka > div {
+  width: 50%;
+}
+
+.somosEureka .somosEureka__titulo--subrayado {
+  border-bottom: 5px solid #b20837;
+  width: 35%;
+}
+
+.somosEureka .somosEureka__titulo {
+  padding-top: 2%;
+}
+
+.somosEureka .somosEureka__parrafo p {
+  padding-top: 2%;
+}
+
+.somosEureka .somosEureka__lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.somosEureka .somosEureka__lottie lottie-player {
+  width: 80%;
+}
+
+/*Estilos Seccion Neustros valores - nosotros*/
+.nuestrosValores__padreBloques {
+  display: flex;
+}
+
+.nuestrosValores__padreBloques .nuestrosValores__vacio, .nuestrosValores__padreBloques .nuestrosValores__titulo, .nuestrosValores__padreBloques .nuestrosValores__bloque {
+  width: 33.33333%;
+}
+
+.nuestrosValores__padreBloques .nuestrosValores__vacio h3, .nuestrosValores__padreBloques .nuestrosValores__titulo h3, .nuestrosValores__padreBloques .nuestrosValores__bloque h3 {
+  margin-bottom: 0%;
+  margin-top: 4%;
+  padding-left: 10%;
+}
+
+.nuestrosValores__padreBloques .nuestrosValores__titulo {
+  padding-right: 0%;
+}
+
+.nuestrosValores__padreBloques h4 {
+  text-align: center;
+}
+
+.nuestrosValores__padreBloques .nuestrosValores__icono {
+  display: flex;
+  justify-content: center;
+  /*Estilos Iconos*/
+}
+
+.nuestrosValores__padreBloques .nuestrosValores__icono span {
+  font-size: 5em;
+}
+
+/*Estilos seccion mision vision - nosotros*/
+.misionVision {
+  display: flex;
+}
+
+.misionVision > div {
+  width: 50%;
+}
+
+.misionVision .misionVision__titulo--subrayado {
+  border-bottom: 5px solid #b20837;
+  width: 50%;
+}
+
+.misionVision__lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.misionVision__lottie lottie-player {
+  width: 80%;
+}
+
+.misionVision__parrafo p {
+  padding-top: 2%;
+}
+
+/*Página Contactos*/
+.contactanosTitulo {
+  width: 100%;
+}
+
+.contactanosTitulo .contactanosTitulo__titulo {
+  align-self: center;
+  width: 100%;
+}
+
+.contactanosBloqueFormulario {
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contactanosBloqueFormulario .contactanosFormulario {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario .flexrow {
+  width: 102%;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario .input, .contactanosBloqueFormulario .contactanosFormulario .select {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  border: solid 1px #e0e0e0;
+  width: 100%;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario label {
+  margin-top: 2%;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario .select {
+  width: 100%;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario .contactanosFormulario__rubroMarca {
+  width: 100%;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario .contactanosFormulario__telefono, .contactanosBloqueFormulario .contactanosFormulario .contactanosFormulario__email {
+  width: 100%;
+}
+
+.contactanosBloqueFormulario .contactanosFormulario .contactanosFormulario__botonLimpiar {
+  background-color: #333566;
+}
+
+/*Estilos de los media queries*/
+/*Estilos de los media queries para pantallas de tablet*/
+/*Estilos de los media queries para pantallas de celular*/
+@media only screen and (max-width: 480px) {
+  .h1, .h2, .h3, .h4 {
+    font-size: 22px;
+  }
+  .p {
+    font-size: 12px;
+  }
+  /*Estilos del Header para el celular*/
+  nav ul {
+    display: flex;
+    align-items: flex-start;
+  }
+  nav .navbar-brand {
+    width: 70%;
+  }
+  .d-flex {
+    padding-left: 8%;
+  }
+  /*Estilos de footer*/
+  .footer__redesSociales {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Estilos banner principal lottie*/
+  .bannerPrincipal__lottie {
+    height: 530px;
+    width: 320px;
+    overflow: hidden;
+  }
+  /*Estilos que hacemos*/
+  .queHacemos__padreBloques {
+    display: flex;
+    flex-direction: column;
+  }
+  .queHacemos__padreBloques .queHacemos__vacio {
+    padding: 0%;
+  }
+  .queHacemos__padreBloques .queHacemos__vacio, .queHacemos__padreBloques .queHacemos__titulo, .queHacemos__padreBloques .queHacemos__bloque {
+    width: 100%;
+  }
+  /*Estilos Tabla*/
+  .tabla {
+    display: none;
+  }
+  /*Como lo hacemos contenido*/
+  .comoLoHacemos {
+    display: flex;
+    flex-direction: column;
+  }
+  .comoLoHacemos > div {
+    width: 100%;
+  }
+  .comoLoHacemos__titulo--subrayado {
+    border-bottom: 5px solid #b20837;
+    width: 80%;
+  }
+  /*Como lo hacemos bloques*/
+  .bloquesComoLoHacemos > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .bloquesComoLoHacemos .bloquesComoLoHacemos__bloque {
+    width: 100%;
+  }
+  /*Seccion porque elegirnos*/
+  .porqueElegirnos {
+    display: flex;
+    flex-direction: column;
+  }
+  .porqueElegirnos > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .h1, .h2, .h3, .h4 {
+    font-size: 26px;
+  }
+  .p {
+    font-size: 16px;
+  }
+  /*Estilos del Header para el celular*/
+  nav ul {
+    display: flex;
+    align-items: flex-start;
+  }
+  nav .navbar-brand {
+    width: 70%;
+  }
+  .d-flex {
+    padding-left: 8%;
+  }
+  /*Estilos de footer*/
+  .footer__redesSociales {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Estilos banner principal lottie*/
+  .bannerPrincipal__lottie {
+    height: 530px;
+    width: 320px;
+    overflow: hidden;
+  }
+  /*Estilos que hacemos*/
+  .queHacemos__padreBloques {
+    display: flex;
+    flex-direction: column;
+  }
+  .queHacemos__padreBloques .queHacemos__vacio {
+    padding: 0%;
+  }
+  .queHacemos__padreBloques .queHacemos__vacio, .queHacemos__padreBloques .queHacemos__titulo, .queHacemos__padreBloques .queHacemos__bloque {
+    width: 100%;
+  }
+  /*Estilos Tabla*/
+  .tabla {
+    display: none;
+  }
+  /*Como lo hacemos contenido*/
+  .comoLoHacemos {
+    display: flex;
+    flex-direction: column;
+  }
+  .comoLoHacemos > div {
+    width: 100%;
+  }
+  /*Como lo hacemos bloques*/
+  .bloquesComoLoHacemos > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .bloquesComoLoHacemos .bloquesComoLoHacemos__bloque {
+    width: 100%;
+  }
+  /*Seccion porque elegirnos*/
+  .porqueElegirnos {
+    display: flex;
+    flex-direction: column;
+  }
+  .porqueElegirnos > div {
+    width: 100%;
+  }
+}
