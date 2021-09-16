@@ -1019,6 +1019,7 @@ footer .footer__boton {
   width: 60%;
 }
 
+/*Estilos sección nuestros valores- responsive celular*/
 .nuestrosValores__padreBloques {
   display: flex;
   flex-direction: column;
@@ -1028,6 +1029,7 @@ footer .footer__boton {
   width: 100%;
 }
 
+/*Estilos sección mision y vision- responsive celular*/
 .misionVision {
   display: flex;
   flex-direction: column;
@@ -1039,4 +1041,9 @@ footer .footer__boton {
 
 .misionVision .misionVision__titulo--subrayado {
   width: 80%;
+}
+
+/*Estilos página de contactanos - responsive celular*/
+.contactanosBloqueFormulario {
+  width: 95%;
 }

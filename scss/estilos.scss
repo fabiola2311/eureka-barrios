@@ -580,6 +580,11 @@ footer{
 }
 
 
+
+
+
+
+
 /*Estilos de los media queries*/
 
 /*Estilos de los media queries para pantallas de tablet*/
@@ -862,7 +867,7 @@ footer{
         width: 60%;
     }
 }
-
+/*Estilos sección nuestros valores- responsive celular*/
 .nuestrosValores__padreBloques{
     display: flex;
     flex-direction: column;
@@ -872,7 +877,7 @@ footer{
         width: $ancho;
     }
 }
-
+/*Estilos sección mision y vision- responsive celular*/
 .misionVision{ 
     display: flex;
     flex-direction: column;
@@ -884,4 +889,9 @@ footer{
     .misionVision__titulo--subrayado{ 
         width: 80%;
     }
+}
+
+/*Estilos página de contactanos - responsive celular*/
+.contactanosBloqueFormulario{
+    width: 95%;
 }
