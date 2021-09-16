@@ -120,8 +120,6 @@ nav{
     width: 100%
 }
 
-
-
 /*Estilos seccion 1 banner pricipal - index*/
 .bannerPrincipal{
     background-color: $azulOscuro;
@@ -146,7 +144,6 @@ nav{
     height: 50em;
     width: 50em;
 }
-
 
 /*Estilos seccion 2 slogan - index*/
 .slogan {
@@ -226,8 +223,6 @@ nav{
         }
     }
 }
-
-
 
 /*Estilos seccion 6 como lo hacemos columnas - index*/
 .bloquesComoLoHacemos{
@@ -413,6 +408,7 @@ footer{
         }
     }
 
+/*Estilos página de servicios*/
 /*Estilos seccion 2 servicios - servicios*/
 
 .servicios__bloque{
@@ -531,7 +527,6 @@ footer{
     padding-top: 2%;
 }
 
-
 /*Página Contactos*/
 
 .contactanosTitulo{
@@ -588,116 +583,9 @@ footer{
 /*Estilos de los media queries*/
 
 /*Estilos de los media queries para pantallas de tablet*/
-
-
-
-/*Estilos de los media queries para pantallas de celular*/
-
-
-
-@media only screen and (max-width: 480px){
-
-    
-    .h1,.h2,.h3,.h4{
-        font-size: 22px;
-    }
-
-    .p{
-        font-size: 12px;
-    }
-
-
-
-    /*Estilos del Header para el celular*/
-    nav{
-        ul{
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .navbar-brand{
-            width: 70%;
-        }
-    
-    }
-    .d-flex{
-        padding-left: 8%;
-    }
-
-    /*Estilos de footer*/
-    .footer__redesSociales{
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*Estilos banner principal lottie*/
-
-    .bannerPrincipal__lottie{
-        height: 530px;
-        width: 320px;
-        overflow: hidden;
-    }
-
-    /*Estilos que hacemos*/
-    .queHacemos__padreBloques{
-        display: flex;
-        flex-direction: column;
-
-        .queHacemos__vacio{
-            padding: 0%;
-        }
-        .queHacemos__vacio, .queHacemos__titulo, .queHacemos__bloque {
-            width: 100%;
-        }
-        }
-    /*Estilos Tabla*/
-    .tabla{
-        display: none;
-    }
-
-    /*Como lo hacemos contenido*/
-    .comoLoHacemos{
-        display: flex;
-        flex-direction: column;
-        >div{
-            width: $ancho;
-        }
-
-    }
-
-    .comoLoHacemos__titulo--subrayado{ 
-        border-bottom: 5px solid $rojoOscuro;
-        width: 80%;
-    }
-
-    /*Como lo hacemos bloques*/
-    .bloquesComoLoHacemos{
-        >div{
-            display: flex;
-            flex-direction: column;
-            
-        } 
-    
-        .bloquesComoLoHacemos__bloque{
-            width: 100%;
-        }
-        }
-    
-    /*Seccion porque elegirnos*/
-    .porqueElegirnos{ 
-        display: flex;
-        flex-direction: column;
-    
-        >div{
-            width: 100%;
-        }
-    }
-
-}
-
 @media only screen and (max-width: 780px){
     .h1,.h2,.h3,.h4{
-        font-size: 26px;
+        font-size: 10px;
     }
 
     .p{
@@ -759,6 +647,7 @@ footer{
         >div{
             width: $ancho;
         }
+
     }
 
     /*Como lo hacemos bloques*/
@@ -773,7 +662,6 @@ footer{
             width: 100%;
         }
         }
-
     
     /*Seccion porque elegirnos*/
     .porqueElegirnos{ 
@@ -786,3 +674,180 @@ footer{
     }
 
 } 
+
+
+/*Estilos de los media queries para pantallas de celular*/
+
+@media only screen and (max-width: 480px){
+
+    /*Estilos de formatos generales - responsive celular */
+    .h1,.h2{ 
+        font-size: 24px;
+    }
+
+    .h3{
+        font-size: 20px;
+    }
+
+    .h4{
+        font-size: 18px;
+    }
+
+    .p{
+        font-size: 14px;
+    }
+    
+    .h6{
+        font-size: 12px;
+    }
+
+    .boton{
+        padding: 2%;
+        font-size: 14px;
+    }
+
+    .divPrincipal{
+        padding-top: 10%;
+    }
+
+    /*Estilos del Header para el celular - responsive celular*/
+    nav{
+        ul{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .navbar-brand{
+            width: 70%;
+        }
+    
+    }
+    .d-flex{
+        padding-left: 8%;
+    }
+
+    /*Estilos de footer - responsive celular*/
+    .footer__redesSociales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    .footer > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        .h6{
+            text-align: center;
+        }
+        .h2{
+            text-align: center;
+        }
+
+        .footer__email{
+            width: 65vw;
+            font-size: 13px;
+        }
+        .footer__boton{
+            font-size: 13px;
+            width: 20vw;
+        }
+    }
+
+    /*Estilos banner principal lottie - responsive celular */
+
+    .bannerPrincipal__lottie{
+        height: 530px;
+        width: 320px;
+        overflow: hidden;
+    }
+
+    /*Estilos que hacemos - responsive celular*/
+    .queHacemos__padreBloques{
+        display: flex;
+        flex-direction: column;
+
+        .queHacemos__vacio{
+            padding: 0%;
+        }
+        .queHacemos__vacio, .queHacemos__titulo, .queHacemos__bloque {
+            width: 100%;
+        }
+        }
+    /*Estilos Tabla - responsive celular*/
+    .tabla{
+        display: none;
+    }
+
+    /*Como lo hacemos contenido - responsive celular*/
+    .comoLoHacemos{
+        display: flex;
+        flex-direction: column;
+
+        >div{
+            width: $ancho;
+        }
+
+        .comoLoHacemos__titulo--subrayado{ 
+            border-bottom: 5px solid $rojoOscuro;
+            width: 60%;        
+        }
+
+    }
+
+
+    /*Como lo hacemos bloques - responsive celular*/
+    .bloquesComoLoHacemos{
+        >div{
+            display: flex;
+            flex-direction: column;
+            
+        } 
+    
+        .bloquesComoLoHacemos__bloque{
+            width: 100%;
+        }
+        }
+    
+    /*Seccion porque elegirnos - responsive celular*/
+    .porqueElegirnos{ 
+        display: flex;
+        flex-direction: column;
+    
+        >div{
+            width: 100%;
+        }
+
+        .porqueElegiernos__titulo--subrayado{
+            width: 60%;
+        }
+    }
+}
+
+/*Estilos página de trabajos - responsive celular*/
+
+.trabajos{
+    display: grid;
+    grid-template-columns: repeat(1,$ancho);
+ }
+
+ .botonTrabajos{
+    width: 40%;
+}
+
+/*Estilos página de servicios - responsive celular*/
+
+.servicios__bloque{
+    display: grid;
+    grid-template-columns: repeat(1,$ancho);
+}
+
+.servicio__icono--order {
+    order: 2;
+}
+
+
