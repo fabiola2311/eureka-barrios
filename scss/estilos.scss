@@ -850,4 +850,38 @@ footer{
     order: 2;
 }
 
+/*Estilos página de nosotros - responsive celular*/
+/*Estilos sección somos eureka - responsive celular*/
+.somosEureka{
+    display: flex;
+    flex-direction: column;
+    >div{
+        width: 100%;
+    }
+    .somosEureka__titulo--subrayado{
+        width: 60%;
+    }
+}
 
+.nuestrosValores__padreBloques{
+    display: flex;
+    flex-direction: column;
+
+
+    .nuestrosValores__vacio, .nuestrosValores__titulo, .nuestrosValores__bloque {
+        width: $ancho;
+    }
+}
+
+.misionVision{ 
+    display: flex;
+    flex-direction: column;
+
+    >div{
+        width: 100%;
+    }
+
+    .misionVision__titulo--subrayado{ 
+        width: 80%;
+    }
+}
