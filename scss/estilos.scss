@@ -587,88 +587,154 @@ footer{
 
 /*Estilos de los media queries*/
 
+@media only screen and (max-width: 1266px){
+    nav{
+        ul{
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    .d-flex{
+        padding-left: 8%;
+    }
+}
 /*Estilos de los media queries para pantallas de tablet*/
-@media only screen and (max-width: 780px){
-    .h1,.h2,.h3,.h4{
-        font-size: 10px;
+
+@media only screen and (max-width: 1024px){
+    /*Estilos de formatos generales - responsive Tablet */
+    .h1,.h2{ 
+        font-size: 34px;
+    }
+
+    .h3{
+        font-size: 24px;
+    }
+
+    .h4{
+        font-size: 22px;
     }
 
     .p{
         font-size: 16px;
     }
+    
+    .h6{
+        font-size: 14px;
+    }
 
+    .boton{
+        padding: 2%;
+        font-size: 14px;
+    }
 
-    /*Estilos del Header para el celular*/
+    .divPrincipal{
+        padding-top: 10%;
+    }
+
+    /*Estilos del Header para el Tablet - responsive Tablet*/
     nav{
         ul{
             display: flex;
             align-items: flex-start;
         }
 
-        .navbar-brand{
-            width: 70%;
-        }
+
     
     }
     .d-flex{
         padding-left: 8%;
     }
 
-    /*Estilos de footer*/
+    /*Estilos de footer - responsive Tablet*/
     .footer__redesSociales{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding-left: 0%;
     }
 
-    /*Estilos banner principal lottie*/
+    .footer > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        .h6{
+            text-align: center;
+        }
+        .h2{
+            text-align: center;
+        }
+
+        .footer__email{
+            width: 50vw;
+            font-size: 16px;
+        }
+        .footer__boton{
+            font-size: 16px;
+            width: 20vw;
+        }
+    }
+
+    /*Estilos banner principal lottie - responsive Tablet */
 
     .bannerPrincipal__lottie{
-        height: 530px;
-        width: 320px;
+        height: 600px;
+        width: 450px;
         overflow: hidden;
     }
 
-    /*Estilos que hacemos*/
+    /*Estilos que hacemos - responsive Tablet*/
     .queHacemos__padreBloques{
         display: flex;
-        flex-direction: column;
-
+        
         .queHacemos__vacio{
             padding: 0%;
         }
         .queHacemos__vacio, .queHacemos__titulo, .queHacemos__bloque {
-            width: 100%;
+            width: $ancho/3;
+        }
+
+        .queHacemos__bloque--50w{
+            width: $ancho/2;
         }
         }
-    /*Estilos Tabla*/
+    /*Estilos Tabla - responsive Tablet*/
     .tabla{
         display: none;
     }
 
-    /*Como lo hacemos contenido*/
+    /*Como lo hacemos contenido - responsive Tablet*/
     .comoLoHacemos{
         display: flex;
         flex-direction: column;
+
         >div{
             width: $ancho;
         }
 
+        .comoLoHacemos__titulo--subrayado{ 
+            border-bottom: 5px solid $rojoOscuro;
+            width: 60%;        
+        }
+
     }
 
-    /*Como lo hacemos bloques*/
+
+    /*Como lo hacemos bloques - responsive Tablet*/
     .bloquesComoLoHacemos{
         >div{
             display: flex;
-            flex-direction: column;
-            
         } 
     
         .bloquesComoLoHacemos__bloque{
-            width: 100%;
+            width: $ancho/2;
         }
-        }
+    }
     
-    /*Seccion porque elegirnos*/
+    /*Seccion porque elegirnos - responsive Tablet*/
     .porqueElegirnos{ 
         display: flex;
         flex-direction: column;
@@ -676,9 +742,74 @@ footer{
         >div{
             width: 100%;
         }
+
+        .porqueElegiernos__titulo--subrayado{
+            width: 60%;
+        }
     }
 
-} 
+    /*Estilos página de trabajos - responsive Tablet*/
+
+    .trabajos{
+        display: grid;
+        grid-template-columns: repeat(3, $ancho/3);
+    }
+
+    .botonTrabajos{
+        width: 40%;
+    }
+
+    /*Estilos página de servicios - responsive Tablet*/
+
+    .servicios__bloque{
+        display: grid;
+        grid-template-columns: repeat(2,$ancho/2);
+    }
+
+    /*Estilos página de nosotros - responsive Tablet*/
+    /*Estilos sección somos eureka - responsive Tablet*/
+    .somosEureka{
+        display: flex;
+        flex-direction: column;
+        >div{
+            width: 100%;
+        }
+        .somosEureka__titulo--subrayado{
+            width: 60%;
+        }
+    }
+    /*Estilos sección nuestros valores- responsive Tablet*/
+    .nuestrosValores__padreBloques{
+        display: flex;
+  
+        .nuestrosValores__vacio, .nuestrosValores__titulo, .nuestrosValores__bloque {
+            width: $ancho/3;
+        }
+    }
+    /*Estilos sección mision y vision- responsive Tablet*/
+    .misionVision{ 
+        display: flex;
+        flex-direction: column;
+
+        >div{
+            width: 100%;
+        }
+
+        .misionVision__titulo--subrayado{ 
+            width: 80%;
+        }
+    }
+
+    /*Estilos página de contactanos - responsive Tablet*/
+    .contactanosBloqueFormulario{
+        width: 95%;
+    }
+}
+
+
+
+
+
 
 
 /*Estilos de los media queries para pantallas de celular*/
@@ -831,67 +962,69 @@ footer{
             width: 60%;
         }
     }
-}
-
-/*Estilos página de trabajos - responsive celular*/
-
-.trabajos{
-    display: grid;
-    grid-template-columns: repeat(1,$ancho);
- }
-
- .botonTrabajos{
-    width: 40%;
-}
-
-/*Estilos página de servicios - responsive celular*/
-
-.servicios__bloque{
-    display: grid;
-    grid-template-columns: repeat(1,$ancho);
-}
-
-.servicio__icono--order {
-    order: 2;
-}
-
-/*Estilos página de nosotros - responsive celular*/
-/*Estilos sección somos eureka - responsive celular*/
-.somosEureka{
-    display: flex;
-    flex-direction: column;
-    >div{
-        width: 100%;
-    }
-    .somosEureka__titulo--subrayado{
-        width: 60%;
-    }
-}
-/*Estilos sección nuestros valores- responsive celular*/
-.nuestrosValores__padreBloques{
-    display: flex;
-    flex-direction: column;
 
 
-    .nuestrosValores__vacio, .nuestrosValores__titulo, .nuestrosValores__bloque {
-        width: $ancho;
-    }
-}
-/*Estilos sección mision y vision- responsive celular*/
-.misionVision{ 
-    display: flex;
-    flex-direction: column;
+    /*Estilos página de trabajos - responsive celular*/
 
-    >div{
-        width: 100%;
+    .trabajos{
+        display: grid;
+        grid-template-columns: repeat(1,$ancho);
     }
 
-    .misionVision__titulo--subrayado{ 
-        width: 80%;
+    .botonTrabajos{
+        width: 40%;
+    }
+
+    /*Estilos página de servicios - responsive celular*/
+
+    .servicios__bloque{
+        display: grid;
+        grid-template-columns: repeat(1,$ancho);
+    }
+
+    .servicio__icono--order {
+        order: 2;
+    }
+
+    /*Estilos página de nosotros - responsive celular*/
+    /*Estilos sección somos eureka - responsive celular*/
+    .somosEureka{
+        display: flex;
+        flex-direction: column;
+        >div{
+            width: 100%;
+        }
+        .somosEureka__titulo--subrayado{
+            width: 60%;
+        }
+    }
+    /*Estilos sección nuestros valores- responsive celular*/
+    .nuestrosValores__padreBloques{
+        display: flex;
+        flex-direction: column;
+
+
+        .nuestrosValores__vacio, .nuestrosValores__titulo, .nuestrosValores__bloque {
+            width: $ancho;
+        }
+    }
+    /*Estilos sección mision y vision- responsive celular*/
+    .misionVision{ 
+        display: flex;
+        flex-direction: column;
+
+        >div{
+            width: 100%;
+        }
+
+        .misionVision__titulo--subrayado{ 
+            width: 80%;
+        }
+    }
+
+    /*Estilos página de contactanos - responsive celular*/
+    .contactanosBloqueFormulario{
+        width: 95%;
     }
 }
 
-/*Estilos página de contactanos - responsive celular*/
-.contactanosBloqueFormulario{
-    width: 95%;
-}
